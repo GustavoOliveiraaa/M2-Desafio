@@ -1,7 +1,4 @@
 # No main será possível acessar as funções através do teclado
-from Triangulo import TiposDeTriangulo
-
-
 
 class Menu: 
     def menu():
@@ -13,15 +10,14 @@ class Menu:
         print ("6: Contar caracteres")
         print ("7: Sair")
 
-    def op1 ():
-            return TiposDeTriangulo
+   
 
     while True:
-        escolher = float (input ("Selecione um dos números: "))
+        escolher = input ("Selecione um dos números: ")
         if escolher in ('1', '2', '3', '4', '5', '6', '7'):
-            num1 = float(input(op1))
-
-            if escolher == "1":
-                print(num1, op1)
-
-        else: break
+            confirma = float(input("Coloque o número: "))
+            if escolher == '1': 
+                print("teste")
+        else: 
+            print ("Adeus")
+      
